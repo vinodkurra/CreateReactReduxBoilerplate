@@ -1,7 +1,7 @@
 import actionType from "./actionTypes";
 import initialState from "./initialStates";
 
-const commonReducer = (state = initialState, action) => {
+const commonReducer = (state, action) => {
   switch (action.type) {
 
 

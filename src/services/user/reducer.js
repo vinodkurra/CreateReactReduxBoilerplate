@@ -1,7 +1,7 @@
 import actionType from "./actionTypes";
 import initialState from "./initialStates";
 
-const commonReducer = (state = initialState, action) => {
+const userReducer = (state, action) => {
   switch (action.type) {
 
 
@@ -20,4 +20,4 @@ const commonReducer = (state = initialState, action) => {
   }
 };
 
-export default commonReducer;
+export default userReducer;

@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Action for Login for user and merchant  //
 
-export const service = () => dispatch => {
+export const userActions = () => dispatch => {
      const config = {
         method: 'get',
         url: "https://jsonplaceholder.typicode.com/users",
@@ -16,7 +16,7 @@ export const service = () => dispatch => {
          if (res.status === 200) {
             if (res.data) {
                 dispatch({
-                    type: actionType.SUCCESS,
+                    type: actionType.USER,
                     payload: res.data,
                 });
             }
